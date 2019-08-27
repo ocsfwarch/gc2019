@@ -1,0 +1,25 @@
+.dlg_item{
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    transform: translateY(-50%);
+    height:10em;
+    width:10em;
+    background-color:#ffffff;
+    margin: 0 auto;
+    display:none;
+    z-index:100;
+}    
+
+.dlg_item_open{
+    display:block;
+}
+
+.dlg_item_closed{
+    display:none;
+}
+
+.red{
+    background-color:red;
+}

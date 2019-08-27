@@ -1,0 +1,12 @@
+.content{
+    position: absolute;
+    top:4em;
+    left:0;
+    background-image: url("../images/gc_image_2.png");
+    background-color:green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: calc(100% - 4em);
+}
