@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import DlgContainer from './DlgContainer';
-import DlgItem from './DlgItem';
+import DlgContainer from '../OcsaDialog/DlgContainer';
+import DlgItem from '../OcsaDialog/DlgItem';
 import './Content.css';
+import OcsaCalendar from '../OcsaCalendar/OcsaCal';
 
 export class Content extends Component {
     state = {
-        dlgCntClass: 'dlg_container dlg_cnt_open',
-        dlgItemClass:'dlg_item dlg_item_open'
+        dlgCntClass: 'dlg_container dlg_cnt_closed',
+        dlgItemClass:'dlg_item dlg_item_closed'
     }
 
     onCloseDlg = (e) => {
@@ -19,6 +20,7 @@ export class Content extends Component {
     render() {
         return (
             <div className="content">
+                <OcsaCalendar onChangeCalDisplay={this.props.onChangeCalDisplay}/>
                 <DlgContainer  className={this.state['dlgCntClass']} />
                 <DlgItem onCloseDlg={this.onCloseDlg} className={this.state['dlgItemClass']}/>
             </div>

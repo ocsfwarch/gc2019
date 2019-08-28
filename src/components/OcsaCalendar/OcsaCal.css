@@ -1,0 +1,85 @@
+.ocsa_cal_container{
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    transform: translateY(-50%);
+    width:22em;
+    height:21em;
+    margin: 0 auto;
+    border-radius:.65em;
+    border: 1px solid black;
+    opacity:0.9;filter:alpha(opacity=90);
+    background-color:transparent;
+    box-shadow: .3125em .3125em .3125em .1875em #708090;
+    text-align:center;
+}
+
+.ocsa_cal_row{
+    float:left;
+    width:100%;
+    height:3em;
+    background-color:transparent;
+    color:blue;
+}
+
+.cal_title{
+    font-family:"Verdana";
+    font-weight:bold;
+    font-size:2em;
+    color:red;
+}
+
+.std{
+    float:left;
+    width:3em;
+    height:3em;
+    background-color:transparent;
+    color:white;
+    margin-right:1px;
+    margin-left:1px;
+    margin-bottom:1px;
+    /*border-radius:.25em;*/
+}
+
+.non_std{
+    float:left;
+    width:3em;
+    height:3em;
+    background-color:blue;
+    color:white;
+    border-radius: .5em;
+    cursor:pointer;
+    margin-right:1px;
+    margin-left:1px;
+    margin-bottom:1px;
+}
+
+.std_bld{
+    float:left;
+    width:3em;
+    height:3em;
+    background-color:transparent;
+    color:blue;
+    font-weight:bold;
+    /*margin:1px;*/
+    /*border-radius:.25em;*/
+}
+
+.use_blank{
+    float:left;
+    width:100%;
+    height:1em;
+}
+
+.ocsa_bold{
+    font-weight:bold;
+}
+
+
+
+.cn {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
