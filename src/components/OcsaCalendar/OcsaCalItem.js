@@ -1,16 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class OcsaCalItem extends Component {
-
-     render() {
+    render() {
         return (
-            <div className={this.props.className} title={this.props.desc} onClick={
-                this.props.onChangeCalDisplay} >
-                <div className="use_blank">&nbsp;</div>
+            <div className={this.props.className}>
                 <div>{this.props.dt_val}</div>
             </div>
-        )
+        );
     }
-} 
+}
 
 export default OcsaCalItem
