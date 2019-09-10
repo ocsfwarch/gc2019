@@ -1,0 +1,54 @@
+.ocsa_grid_int_container{
+    width:15em;
+    height:15em;
+    display:grid;
+    border-radius:.65em;
+    overflow:hidden;
+    margin: auto;
+    border: 1px solid black;
+    opacity:0.9;filter:alpha(opacity=90);
+    background-color:red;
+    box-shadow: .3125em .3125em .3125em .1875em #708090;
+}
+
+.ocsa_grid_int_item{
+    display:flex;
+    /*align-items:center;*/
+    /*justify-content:center;*/
+    height:98%;
+    width:98%;
+    margin:auto;
+    overflow:hidden;
+    background-color:green;
+    color:white;
+    border-radius: .5em;
+}
+
+.ocsa_scrolling_div_parent{
+    float:left;
+    height:95%;
+    width:95%;
+    margin:.5em;
+    background-color:pink;
+    overflow:hidden;
+}
+
+.ocsa_scroller{
+    overflow-y:scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+.ocsa_scrolling_child{
+    width:95%;
+    margin:.5em;
+    overflow:hidden;
+    background-color:purple;
+}
+
+
+@media screen and (min-width:1024px){
+    .ocsa_grid_int_container{
+        width:21em;
+        height:21em;
+    }
+}

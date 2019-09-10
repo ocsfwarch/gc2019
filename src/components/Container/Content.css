@@ -1,12 +1,31 @@
 .content{
     position: absolute;
-    top:4em;
+    top:4vh;
     left:0;
     background-image: url("../../images/gc_image_2.png");
     background-color:green;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width:100%;
-    height: calc(100% - 4em);
+    width:100vw;
+    height: 96vh;
+    /*height: calc(100vh - 4vw);*/
+}
+
+.content .content_container{
+    display:grid;
+    grid-template-rowss: repeat(2,1fr);
+    grid-row-gap: 1em;
+    height:90vh;
+    width:80vw;
+    margin:auto;
+    background-color:transparent;
+}
+
+@media screen and (min-width:1024px){
+    .content .content_container{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 1em;
+        background-color:transparent;
+    }
 }
