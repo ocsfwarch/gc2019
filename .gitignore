@@ -66,6 +66,9 @@ typings/
 /.pnp
 .pnp.js
 
+# documentation
+/src/docs
+
 # testing
 /coverage
 
