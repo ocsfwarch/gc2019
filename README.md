@@ -1,5 +1,8 @@
 ## Project Name: 
 GC 2019
+
+## Link to Live URL: **[GC 2019](https://www.ocsfwarch.com/GC2019/)**
+
 ## Summary: 
 The purpose of this application is to provide trail and scheduling information to participants in an online manner. This is an SPA, React/Node application. It will consist of a client GUI and a server API using a REST architecture. 
 ## Client Components:
