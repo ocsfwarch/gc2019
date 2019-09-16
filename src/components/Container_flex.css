@@ -1,0 +1,30 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Or whatever */
+    width:100vw;
+    /*background-color:blue;*/
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url("../images/gc_image_2.png");
+    overflow: auto;
+  }
+  
+  .child {
+    width: 15em;  /* Or whatever */
+    height: 15em; /* Or whatever */
+    margin: auto;  /* Magic! */
+    background-color:red;
+    color:white;
+  }
+
+  @media screen and (min-width:768px){
+    .parent{
+        flex-direction: row;
+    }
+    .child{
+        width: 20em;
+        height: 20em;
+    }
+}

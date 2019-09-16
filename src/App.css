@@ -3,6 +3,13 @@ body,html{
   padding:0;
 }
 
+body{
+  transition:all .4s linear; 
+  -o-transition:all .4s linear; 
+  -moz-transition:all .4s linear; 
+  -webkit-transition:all .4s linear;
+}
+
 *{
   box-sizing: border-box;
 }
