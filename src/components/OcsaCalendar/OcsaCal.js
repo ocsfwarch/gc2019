@@ -21,7 +21,7 @@ export class OcsaCal extends Component {
                 <OcsaCalItem dt_val={'Thu'} className={'ocsa_grid_cal_item_bold'} />
                 <OcsaCalItem dt_val={'Fri'} className={'ocsa_grid_cal_item_bold'} />
                 <OcsaCalItem dt_val={'Sat'} className={'ocsa_grid_cal_item_bold'} />
-                {this.props.items.map((item) => (
+                {this.props.calItems.map((item) => (
                     <OcsaCalItem key={item.key} 
                     active={item.active} 
                     dt_val={item.date} 

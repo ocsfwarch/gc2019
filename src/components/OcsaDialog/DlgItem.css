@@ -4,10 +4,14 @@
     left:0;
     right:0;
     transform: translateY(-50%);
-    height:10em;
-    width:10em;
+    width:15em;
+    height:15em;
     background-color:#ffffff;
+    border-radius:.65em;
+    overflow:hidden;
     margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: .3125em .3125em .3125em .1875em #708090;
     display:none;
     z-index:100;
 }    
@@ -22,4 +26,18 @@
 
 .red{
     background-color:red;
+}
+
+.dlg_item_content{
+    height:100%;
+    width:100%;
+    padding:.5em;
+    background-color:transparent;
+}
+
+@media screen and (min-width:1024px){
+    .dlg_item{
+        width:21em;
+        height:21em;
+    }
 }
