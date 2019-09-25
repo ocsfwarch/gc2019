@@ -1,7 +1,8 @@
 import React from 'react';
 
 // Declarations using ES6 modules
-import { BrowserRouter, Route, Link } from "react-router-dom";
+//import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 // Declarations using CommonJS modules
 //const BrowserRouter = require("react-router-dom").BrowserRouter;
@@ -9,15 +10,14 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 //const Link = require("react-router-dom").Link;import './App.css';
 
 import Container_flex from './components/Container_flex';
-import DlgContainer   from './components/OcsaDialog/DlgContainer';
+//import DlgContainer   from './components/OcsaDialog/DlgContainer';
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/GC2019">
       <div className="App">
         <Route path='/' exact component={Container_flex} />
-        <Route path='/comments'  component={DlgContainer} />
       </div>
     </BrowserRouter>
   );

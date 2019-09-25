@@ -9,8 +9,7 @@ export class DlgItem extends Component {
         return (
             <div className={classStyle}>
                 <section className="dlg_item_content">
-                    <AddComment />
-                    <input type="button" value="Close" onClick={this.props.onCloseDlg} />
+                    <AddComment currentActiveId={this.props.currentActiveId} onSaveComment={this.props.onSaveComment} closeComment={this.props.onCloseDlg}/>
                 </section>
             </div>
         )

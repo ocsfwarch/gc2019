@@ -8,9 +8,7 @@ import DlgItem from './OcsaDialog/DlgItem';
 export class Container_flex extends Component {
 
     state = {
-        intDisplay:{
-            nId:0,
-            strDetails:`This is where the trip information will go`},
+        currentActiveId:0,
         calItems:[
             {
                 key:0,
@@ -71,12 +69,18 @@ export class Container_flex extends Component {
         console.log(`onAddComment = ${value}`);
     }
 
+    onSaveComment = (value) => {
+        console.log(`onSaveComment = ${value}`);
+        this.setState({dlg:{active:false}});
+    }
+
     onChangeCalDisplay = (value) => {
         const tempItems = this.state.itinItems.filter((e) => e.key === Number(value));
         if(tempItems.length !== 0){
+            this.setState({currentActiveId: value});
             this.setState({dispItems:tempItems.slice(0)});
         }else{
-            //this.setState({intDisplay:{nId:0,strDetails:`Sorry that is inactive`}});
+            this.setState({currentActiveId:0});
             this.setState({dispItems:this.state.itinItems.slice(0)});
         }
         console.log(`onChangeCalDisplay key = ${this.state.dispItems[0].key}`);
@@ -103,7 +107,7 @@ export class Container_flex extends Component {
                     <OcsaCalendar  calItems={this.state.calItems}   onChangeCalDisplay={this.onChangeCalDisplay} />
                     <OcsaItinerary dispItems={this.state.dispItems} onAddComment={this.onAddComment}/>
                     <DlgContainer  active={this.state.dlg.active} />
-                    <DlgItem       active={this.state.dlg.active }  onCloseDlg={this.onCloseDlg} />
+                    <DlgItem       active={this.state.dlg.active } currentActiveId={this.state.currentActiveId}  onSaveComment={this.onSaveComment} onCloseDlg={this.onCloseDlg} />
             
             </div>
         )
