@@ -3,6 +3,8 @@
     flex-direction: column;
     height: 100vh; /* Or whatever */
     width:100vw;
+    align-content: space-between;
+    justify-content: space-evenly;
     /*background-color:blue;*/
     background-position:center;
     background-repeat: no-repeat;
