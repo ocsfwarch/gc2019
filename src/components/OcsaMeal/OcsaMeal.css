@@ -1,5 +1,5 @@
 .ocsa_grid_meal_container{
-    height:15em;
+    height:14em;
     width:15em;
     display:flex;
     align-items:center;
@@ -18,6 +18,28 @@
     width:14em;
     overflow-y:scroll;
     background-color:transparent;
+}
+
+.ocsa_meal_overview{
+    width:95%;
+    margin:.5em;
+    height:3em;
+    border-radius: .5em;
+    overflow:hidden;
+    color:black;
+    font-weight: bold;
+    background-color:transparent;
+}
+
+.ocsa_meal_overview_title{
+    float:left;
+    height:1.25em;
+    width:calc(100% - 2em);
+    text-align:center;
+    margin:.5em;
+    border: 1px solid black;
+    border-radius:.5em;
+    background-color:white;
 }
 
 .ocsa_meal_item{
@@ -69,12 +91,12 @@
 
 @media screen and (min-width:1024px){
     .ocsa_grid_meal_container{
-        height:21em;
+        height:23em;
         width:21em;
     }
     .ocsa_grid_meal_scroller{
-        height:20em;
-        width:20em;
+        height:22em;
+        width:22em;
     }
 }
 

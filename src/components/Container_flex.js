@@ -17,7 +17,11 @@ export class Container_flex extends Component {
                 active:false,
                 date:0,
                 type:'',
-                desc:''
+                title:'',
+                desc:'',
+                miles:'',
+                effort:'',
+                time:''
             }
         ],
         itinItems:[
@@ -26,7 +30,11 @@ export class Container_flex extends Component {
                 active:false,
                 date:0,
                 type:'',
-                desc:''
+                title:'',
+                desc:'',
+                miles:'',
+                effort:'',
+                time:''
             }
         ],
         dispItems:[
@@ -35,7 +43,11 @@ export class Container_flex extends Component {
                 active:false,
                 date:0,
                 type:'',
-                desc:''
+                title:'',
+                desc:'',
+                miles:'',
+                effort:'',
+                time:''
             }
         ],
         mealItems:[
@@ -188,8 +200,9 @@ export class Container_flex extends Component {
     }
 
     componentDidMount() {
+        
         const API_TOKEN = "910237e9-95fd-4ecf-b17b-4af6605a1f01";
-        fetch('https://ocsa-api-server.herokuapp.com/itinerary',{
+        fetch('https://ocsa-api-server.herokuapp.com/gcapi/itinerary',{
             headers:{
                 Authorization: `Bearer ${API_TOKEN}`,
             },
@@ -203,6 +216,7 @@ export class Container_flex extends Component {
                 const tempItin = data.filter((e) => e.active === true);
                 return this.setState({ calItems: data, itinItems:tempItin, dispItems:tempItin });
           });
+        
     }
 
     onCloseDlg = (e) => {

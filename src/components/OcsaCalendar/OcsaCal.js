@@ -27,7 +27,7 @@ export class OcsaCal extends Component {
                     dt_val={item.date} 
                     index_val={item.key}
                     className={item.type}
-                    desc={item.desc}
+                    desc={item.title}
                     onChangeCalDisplay={this.props.onChangeCalDisplay}
                     />
                 ))}
