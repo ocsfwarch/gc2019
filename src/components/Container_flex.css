@@ -1,7 +1,8 @@
 .parent {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Or whatever */
+    /*height: 100vh;*/
+    height:45em; 
     width:100vw;
     align-content: space-between;
     justify-content: space-evenly;
@@ -10,13 +11,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image:url("../images/gc_image_2.png");
-    overflow: auto;
+    overflow: overflow-y;
   }
   
   .child {
-    width: 15em;  /* Or whatever */
-    height: 15em; /* Or whatever */
-    margin: auto;  /* Magic! */
+    width: 15em;  
+    height: 15em; 
+    margin: auto;  
     background-color:red;
     color:white;
   }
@@ -24,6 +25,8 @@
   @media screen and (min-width:768px){
     .parent{
         flex-direction: row;
+        height: 100vh;
+        /*overflow: auto;*/
     }
     .child{
         width: 20em;

@@ -17,9 +17,18 @@
     grid-column: 1/-1;
     font-family:"Verdana";
     font-weight:bold;
-    font-size:2em;
+    font-size:1.25em;
     text-align:center;
     color:red;
+}
+
+.ocsa_grid_weather{
+    grid-column: 1/-1;
+    font-family:"Verdana";
+    font-weight:bold;
+    font-size:.65em;
+    text-align:center;
+    color:white;
 }
 
 .ocsa_grid_cal_item{
@@ -61,5 +70,11 @@
     .ocsa_grid_cal_container{
         height:23em;
         width:21em;
+    }
+    .ocsa_grid_title{
+        font-size: 2em;
+    }
+    .ocsa_grid_weather{
+        font-size: .85em;
     }
 }

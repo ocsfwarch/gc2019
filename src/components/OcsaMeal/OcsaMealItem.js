@@ -18,7 +18,7 @@ export class OcsaMealItem extends Component {
                 <section className="ocsa_meal_item_content">
                     <section className="meal_title">{this.props.mealItems.title}</section>
                         {this.props.mealItems.ingredients.map((item) => (
-                            <section className="meal_ingredient">{item.name}</section>
+                            <section className="meal_ingredient" key={item.key}>{item.name}</section>
                         ))}
                 </section>
             </div>
