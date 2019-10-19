@@ -1,7 +1,15 @@
 .main_container{
-    display:grid;
     height:100vh;
     width:100vw;
-    text-align: center;
-    background-color:green;
-  }
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width:768px){
+    .main_container{
+        overflow:hidden;
+    }
+}

@@ -13,7 +13,7 @@ export class OcsaCal extends Component {
     render() {
             const strWeather = `GC Village Temps - Curr: ${this.props.weather.curr} Hi: ${this.props.weather.hi} Lo: ${this.props.weather.lo}`;
             return (
-            <div className="ocsa_grid_cal_container">
+            <div className={this.props.theClass}>
                 <div className="ocsa_grid_title">November 2019</div>
                 <OcsaCalItem dt_val={'Sun'} className={'ocsa_grid_cal_item_bold'} />
                 <OcsaCalItem dt_val={'Mon'} className={'ocsa_grid_cal_item_bold'} />

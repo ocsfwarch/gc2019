@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Container_flex.css';
+import './ContainerFlex.css';
 import OcsaCalendar from './OcsaCalendar/OcsaCal';
 import OcsaItinerary from './OcsaItinerary/OcsaItinerary';
 import DlgContainer from './OcsaDialog/DlgContainer';
@@ -222,7 +222,7 @@ export class Container_flex extends Component {
         ],
         dlg:{
             active:false,
-        }
+        },
     }
 
     componentDidMount() {
@@ -285,11 +285,10 @@ export class Container_flex extends Component {
 
     render() {
         return (
-            
-            <div className="parent">
-                    <OcsaCalendar  calItems={this.state.calItems} weather={this.state.weather}  onChangeCalDisplay={this.onChangeCalDisplay} />
-                    <OcsaItinerary dispItems={this.state.dispItems} onAddComment={this.onAddComment}/>
-                    <OcsaMeals     mealItems={this.state.mealItems}/>
+            <div className="parent">      
+                    <OcsaCalendar  theClass={this.props.display.strCalClassName} calItems={this.state.calItems} weather={this.state.weather}  onChangeCalDisplay={this.onChangeCalDisplay} />
+                    <OcsaItinerary theClass={this.props.display.strItinClassName} theScroller={this.props.display.strItinScroller} dispItems={this.state.dispItems} onAddComment={this.onAddComment}/>
+                    <OcsaMeals     theClass={this.props.display.strMealClassName} theScroller={this.props.display.strMealScroller} mealItems={this.state.mealItems}/>
                     <DlgContainer  active={this.state.dlg.active} />
                     <DlgItem       active={this.state.dlg.active } currentActiveId={this.state.currentActiveId}  onSaveComment={this.onSaveComment} onCloseDlg={this.onCloseDlg} />           
             </div>

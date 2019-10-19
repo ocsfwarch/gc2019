@@ -4,9 +4,10 @@ import './OcsaMeal.css';
 
 export class OcsaMealContainer extends Component {
     render() {
+        console.log(`theScroller = ${this.props.theScroller}`);
         return (
-            <div className="ocsa_grid_meal_container">
-                <section className="ocsa_grid_meal_scroller">
+            <div className={this.props.theClass }>
+                <section className={this.props.theScroller}>
                     <section className="ocsa_meal_overview">
                         <section className="ocsa_itin_item_content">
                             <section className="ocsa_meal_overview_title">

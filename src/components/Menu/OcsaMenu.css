@@ -1,0 +1,18 @@
+.ocsa_header{
+    position:static;
+    top:0;
+    left:0;
+    height:1.4em;
+    width:100vw;
+    background-color:lightskyblue;
+    color:blue;
+    visibility:visible;
+    text-align: center;
+}
+
+@media screen and (min-width:1024px){
+    .ocsa_header{
+        background-color:lightskyblue;
+        /*visibility:hidden;*/
+    }
+}

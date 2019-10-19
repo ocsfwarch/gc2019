@@ -20,6 +20,15 @@
     background-color:transparent;
 }
 
+.ocsa_grid_meal_container_max{
+    height:28em;
+    width:27em;
+}
+.ocsa_grid_meal_scroller_max{
+    height:26em;
+    width:26em;
+}
+
 .ocsa_meal_overview{
     width:95%;
     margin:.5em;
